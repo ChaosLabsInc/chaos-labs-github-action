@@ -1,8 +1,7 @@
 name: Test
 
-on:
-  pull_request:
-    types: [opened]
+# Triggers the workflow on push or pull request events
+on: [push, pull_request]
 
 jobs:
   test:
