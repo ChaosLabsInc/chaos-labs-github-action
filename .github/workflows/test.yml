@@ -10,5 +10,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./
-      with:
-        CHAOS_TOKEN: ${{secrets.CHAOS_TOKEN}}
+        with:
+          CHAOS_TOKEN: ${{secrets.CHAOS_TOKEN}}
