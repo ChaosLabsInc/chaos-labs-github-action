@@ -3,17 +3,6 @@ name: Test
 # Triggers the workflow on push or pull request events
 on: [push, pull_request]
 
-inputs:
-  CHAOS_TOKEN:
-    description: "Chaos API token"
-    required: true
-  CHAOS_ENDPOINT:
-    description: "Chaos endpoint"
-    required: true
-  CHAOS_ID:
-    description: "Chaos ID param"
-    required: true
-
 jobs:
   test:
     runs-on: ubuntu-latest
