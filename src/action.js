@@ -12,9 +12,8 @@ async function run() {
     console.log("Built url: ", url);
     try {
         const response = await axios.get(url);
-        const { results } = await response.json();
         console.log("Got results from API server.... ")
-        console.log(results)
+        console.log(response)
     } catch (e) {
         console.log("Chaos simulation failed... ", e);
     }
