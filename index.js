@@ -8,8 +8,8 @@ const CHAOS_ID = core.getInput('CHAOS_ID');
 const CHAOS_ENDPOINT = core.getInput('CHAOS_ENDPOINT');
 
 async function run() {
-    console.log('Hello index.js, world!');
     const url = `${CHAOS_ENDPOINT}/ci/?&CHAOS_ID=${CHAOS_ID}&CHAOS_TOKEN=${CHAOS_TOKEN}`;
+    console.log("Built url: ", url);
     try {
         const response = await axios.get(url);
         const { results } = await response.json();
