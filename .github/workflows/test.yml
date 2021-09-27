@@ -3,14 +3,24 @@ name: Test
 # Triggers the workflow on push or pull request events
 on: [push, pull_request]
 
+inputs:
+  CHAOS_TOKEN:
+    description: "Chaos API token"
+    required: true
+  CHAOS_ENDPOINT:
+    description: "Chaos endpoint"
+    required: true
+  CHAOS_ID:
+    description: "Chaos ID param"
+    required: true
+
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: ./
         with:
           CHAOS_TOKEN: ${{secrets.CHAOS_TOKEN}}
           CHAOS_ENDPOINT: ${{secrets.CHAOS_ENDPOINT}}
           CHAOS_ID: ${{secrets.CHAOS_ID}}
-      - run: npm run chaos-simulate
