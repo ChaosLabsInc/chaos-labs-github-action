@@ -11,3 +11,5 @@ jobs:
       - uses: ./
         with:
           CHAOS_TOKEN: ${{secrets.CHAOS_TOKEN}}
+          CHAOS_ENDPOINT: ${{secrets.CHAOS_ENDPOINT}}
+          CHAOS_ID: ${{secrets.CHAOS_ID}}
