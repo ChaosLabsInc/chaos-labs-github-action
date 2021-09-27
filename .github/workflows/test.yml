@@ -9,7 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
-      - uses: ./
         with:
           CHAOS_TOKEN: ${{secrets.CHAOS_TOKEN}}
           CHAOS_ENDPOINT: ${{secrets.CHAOS_ENDPOINT}}
