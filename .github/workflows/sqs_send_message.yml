@@ -2,8 +2,6 @@ name: Trigger sqs message from push
 
 on: [push]
 
-  workflow_dispatch:
-
 jobs:
   pushToSQS:
     runs-on: ubuntu-latest
