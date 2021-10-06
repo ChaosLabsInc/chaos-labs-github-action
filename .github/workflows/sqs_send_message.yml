@@ -20,4 +20,4 @@ jobs:
       - uses: isbang/sqs-action@v0.1.1
         with:
           sqs-url: https://sqs.us-east-2.amazonaws.com/401669721536/simulation_jobs
-          message: ${ { toJSON(github) }}    
+          message: ${{ toJSON(github) }}    
