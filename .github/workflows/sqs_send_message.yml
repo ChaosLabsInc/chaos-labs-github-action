@@ -1,6 +1,6 @@
 name: Trigger sqs message from push
 
-on: [push]
+on: [push,workflow_dispatch]
 
 jobs:
   pushToSQS:
