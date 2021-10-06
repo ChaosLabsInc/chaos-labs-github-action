@@ -1,8 +1,6 @@
 name: Trigger sqs message from push
 
-on:
-  issues:
-    types: [push]
+on: [push]
 
   workflow_dispatch:
 
