@@ -32,7 +32,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-2
 
-      - uses: ChaosLabsInc/chaos-labs-github-action@v0.1.0
+      - uses: ChaosLabsInc/chaos-labs-github-action@v0.1.1
         with:
           chaos_token: "${{secrets.CHAOS_TOKEN}}"
           github: ${{ toJSON(github) }}
