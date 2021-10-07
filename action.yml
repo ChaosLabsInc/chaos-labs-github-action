@@ -1,12 +1,19 @@
-name: "Init Chaos Cloud Simulation Action"
-description: "Kick off simulations"
-author: "[Omer Goldberg]"
+name: "Init Chaos Cloud Simulation"
+description: "Kick off simulations on cloud"
+author: "[Chaos Labs]"
+
+branding:
+  icon: 'message-square'
+  color: 'purple'
 
 inputs:
-  CHAOS_TOKEN:
+  chaos_token:
     description: "Chaos token"
+    required: true
+  github:
+    description: "github meta data"
     required: true
 
 runs:
   using: "node12"
-  main: "dist/index.js"
+  main: "index.js"

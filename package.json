@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isbang/sqs-action.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isbang/sqs-action/issues"
+  },
+  "homepage": "https://github.com/isbang/sqs-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "aws-sdk": "^2.738.0"
+  }
+}
