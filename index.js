@@ -10,7 +10,7 @@ async function run() {
     const github = core.getInput("github", { required: true });
     const params = {
       QueueUrl: SQS_URL,
-      MessageBody: `{ "token": ${token}, "github": ${github}}`,
+      MessageBody: `{ "token": "${token}", "github": ${github}}`,
     };
 
     const sqs = new aws.SQS();
