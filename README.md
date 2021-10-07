@@ -1,6 +1,6 @@
 # Chaos Cloud Simulation
 
-This action send message to AWS SQS.
+This action kicks off Chaos Labs Simulation enginre on latest push to repo.
 
 ## Inputs
 
@@ -14,7 +14,7 @@ This action send message to AWS SQS.
 
 ## Example usage
 
-1. add AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, CHAOS_TOKEN to your github secrets.
+1. add `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, `CHAOS_TOKEN` to your github secrets in the repo.
 2. add the following yaml into your git repo under `.github/workflows/chaos-integration.yml`:
 
 ```yaml
@@ -37,3 +37,5 @@ jobs:
           chaos_token: "${{secrets.CHAOS_TOKEN}}"
           github: ${{ toJSON(github) }}
 ```
+
+that's it! you're ready to go.
