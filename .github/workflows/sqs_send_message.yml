@@ -1,6 +1,6 @@
 name: Trigger sqs message from push
 
-on: [push,workflow_dispatch]
+on: [push, workflow_dispatch]
 
 jobs:
   pushToSQS:
@@ -15,4 +15,4 @@ jobs:
       - uses: isbang/sqs-action@v0.1.1
         with:
           sqs-url: https://sqs.us-east-2.amazonaws.com/401669721536/simulation_jobs
-          message: ${{ toJSON(github) }}    
+          message: '{ "token": ${{secrets.CHAOS_TOKEN}}, "repo": ${{ github.repositoryUrl }}, "actor": ${{ github.actor }}, "event_name": ${{ github.event_name }}, "ref": ${{ github.ref }} }'

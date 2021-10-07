@@ -6,12 +6,6 @@ inputs:
   CHAOS_TOKEN:
     description: "Chaos token"
     required: true
-  CHAOS_ENDPOINT:
-    description: "Chaos url endpoint"
-    required: true
-  CHAOS_ID:
-    description: "Chaos id"
-    required: true
 
 runs:
   using: "node12"
