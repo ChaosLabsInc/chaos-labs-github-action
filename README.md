@@ -1,4 +1,4 @@
-# AWS SQS javascript action
+# Init Chaos Cloud Simulation
 
 This action send message to AWS SQS.
 
